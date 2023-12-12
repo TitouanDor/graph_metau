@@ -9,12 +9,12 @@ def moyenne(l):
     assert (type(l) == list) , "L n'est pas une liste (moyenne)"
     
     
-    if len(l)==0:
+    if len(l) == 0:
         return 0  
-    somme=0
+    somme = 0
     for nombre in l:
-        somme+=nombre
-    moyenne=somme/len(l)
+        somme += nombre
+    moyenne = somme / len(l)
     return moyenne
 
 def Minimum(L):
@@ -27,12 +27,12 @@ def Minimum(L):
 
     assert (type(L) == list) , "L n'est pas une liste (minimum)"
     
-    if len(L)==0:
+    if len(L) == 0:
         return None  
-    minimum=L[0]  
+    minimum = L[0]  
     for nombre in L:
-        if nombre<minimum:
-            minimum=nombre
+        if nombre < minimum:
+            minimum = nombre
     return minimum
 
 
@@ -50,10 +50,10 @@ def rechercheSequentielle(L, date_recherchee):
 
 
     
-    for i in range (len(L)):
-        if L[i]==date_recherchee:
-            indice=i
-            if indice!=-1:
+    for i in range(len(L)):
+        if L[i] == date_recherchee:
+            indice = i
+            if indice != -1:
                 print(f"La date a été trouvée à l'indice {indice}.")
             else:
                 print(f"La date n'a pas été trouvée dans la liste.")

@@ -68,14 +68,13 @@ assert (rechercheSequentielle([ 1 , 2 , 3 , 6 , 5 , 4 , 7 , 8 , 9 , 0] , 5) == 4
 #endregion#####################################################################
 
 while loop:
-    print(dates)
 
     verif_met = verif_date = False
     
     while verif_met == False:
         """Vérifie que le métal choisi soit bien l'or ou le platine"""
 
-        choix_metaux = input("Vous souhaitez etudier le cours de quel minerai (or ou platine) : ")
+        choix_metaux = input("Vous souhaitez etudier le cours de quel minerai (or ou platine) (pour arréter le programme ne rien saisir et appuyer sur 'entré') : ")
         
         if (choix_metaux.upper() == "OR"):
             l_meteaux_choisi = l_or.copy()
@@ -152,5 +151,6 @@ while loop:
         plt.legend() 
         plt.tight_layout()
         plt.show()
+        print("Pour continuer le programme veuillez fermer la fenêtre du graphe")
 
         #endregion
